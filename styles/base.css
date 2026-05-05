@@ -125,6 +125,12 @@ h1 {
   padding: 1rem;
 }
 
+.flag p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
 .about-layout {
   grid-template-columns: 1fr 200px;
 }
