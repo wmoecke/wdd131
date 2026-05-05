@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #1f4e79;
+  --secondary-color: #12324f;
+  --accent-color: #f4b400;
+  --background-color: #f7f9fb;
+  --card-background: #ffffff;
+  --text-color: #222222;
+  --border-color: #d7dde3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  padding: 1rem;
+  /* font-family: "Merriweather", Georgia, serif; */
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f2f2f;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #1f4e79;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  /* font-family: "Merriweather", Georgia, serif; */
+  color: var(--primary-color);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  /* font-family: "Merriweather", Georgia, serif; */
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  margin: 1rem auto;
+  padding-bottom: 0.4rem;
+  width: 80%;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  /* font-family: "Merriweather", Georgia, serif; */
+  color: var(--primary-color);
+}
+
+.card p,
+.card ul {
+  margin: 1rem;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card a {
+  color: var(--primary-color);
+}
+
+.card a:hover {
+  color: #000000;
+}
+
+.about-layout,
+.country-layout {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+}
+
+.about-layout {
+  grid-template-columns: 1fr 200px;
+}
+
+.country-layout {
+  grid-template-columns: 250px 1fr;
+}
+
+.card ul {
+  padding-left: 2rem;
+}
+
+.card li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.3rem;
+}
+
+#lastModified {
+  color: #ffe58a;
+  font-size: 0.95rem;
+}

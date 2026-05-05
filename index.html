@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course home page by Werner Moecke">
+  <meta name="author" content="Werner Moecke">
+  <title>WDD 131 - Dynamic Web Fundamentals - Werner Moecke</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/in/wernermoecke" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Werner Moecke</h1>
+    <div class="card-grid">
+      <section class="card">
+        
+        <h2>About Me</h2>
+        <div class="card-content about-layout">
+          <p>
+            My name is Werner Moecke. I live in Brazil and I am studying web
+            development. I enjoy learning how HTML, CSS, JavaScript, and modern
+            development tools work together to create useful and accessible web
+            pages.
+          </p>
+          <img src="images/profile.jpg" alt="Werner Moecke profile photo" width="200" height="250">
+        </div>
+
+        <h3>Brazil</h3>
+        <div class="country-layout">
+          <img src="images/brazil.png" alt="Brazil landscape" width="250" height="160">
+          <p>
+            Brazil is the largest country in South America. It is known for its
+            diverse culture, beautiful landscapes, music, food, and welcoming people.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+          <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | Werner Moecke | Brazil
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
