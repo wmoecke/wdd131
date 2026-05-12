@@ -13,7 +13,7 @@
     display: none;
   }
 
-  .navigation {
+  nav {
     flex-direction: row;
     justify-content: flex-end;
     background-color: transparent;

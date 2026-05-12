@@ -54,7 +54,7 @@ header {
   content: "✕";
 }
 
-.navigation {
+nav {
   display: flex;
   flex-direction: column;
   background-color: var(--secondary-color);
@@ -103,6 +103,11 @@ figure {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  min-height: 320px;
 }
 
 figure img {
@@ -110,6 +115,7 @@ figure img {
   width: 100%;
   height: auto;
   border-radius: 6px;
+  align-self: center;
 }
 
 figcaption {
@@ -117,6 +123,7 @@ figcaption {
   text-align: center;
   font-weight: 700;
   color: var(--primary-color);
+  align-self: end;
 }
 
 footer {
