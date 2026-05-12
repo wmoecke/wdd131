@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #1f567d;
+  --secondary-color: #2f2f2f;
+  --accent-color: #f4b400;
+  --background-color: #f7f9fb;
+  --card-color: #ffffff;
+  --text-color: #222222;
+  --border-color: #d7dde3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.header-content {
+  position: relative;
+}
+
+.site-title {
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#menu {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  border: 0;
+  background: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✕";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  background-color: var(--accent-color);
+  color: #111111;
+}
+
+.navigation.open a {
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figcaption {
+  padding-top: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer p {
+  margin: 0.35rem;
+}
+
+#lastModified {
+  color: #ffe58a;
+  font-size: 0.95rem;
+}

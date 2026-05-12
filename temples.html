@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="WDD 131 Temple Album assignment page featuring a responsive picture album with temple images.">
+  <meta name="author" content="Werner Moecke">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <span class="site-title">Temple Album</span>
+      <button id="menu" aria-label="Open navigation menu"></button>
+
+      <nav class="navigation">
+        <a href="#" title="Home">Home</a>
+        <a href="#" title="Old">Old</a>
+        <a href="#" title="New">New</a>
+        <a href="#" title="Large">Large</a>
+        <a href="#" title="Small">Small</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+
+    <div class="album">
+      <figure>
+        <img src="images/temple-01.jpg" alt="São Paulo Brazil Temple" loading="lazy" width="400" height="250">
+        <figcaption>São Paulo Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-02.jpg" alt="Provo City Center Temple" loading="lazy" width="400" height="250">
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-03.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="250">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-04.jpg" alt="Rome Italy Temple" loading="lazy" width="400" height="250">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-05.jpg" alt="Paris France Temple" loading="lazy" width="400" height="250">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-06.jpg" alt="Mesa Arizona Temple" loading="lazy" width="400" height="250">
+        <figcaption>Mesa Arizona Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-07.jpg" alt="Curitiba Brazil Temple" loading="lazy" width="400" height="250">
+        <figcaption>Curitiba Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-08.jpg" alt="Campinas Brazil Temple" loading="lazy" width="400" height="250">
+        <figcaption>Campinas Brazil Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temple-09.jpg" alt="Washington D.C. Temple" loading="lazy" width="400" height="250">
+        <figcaption>Washington D.C. Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Werner Moecke | Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
