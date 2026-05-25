@@ -1,0 +1,36 @@
+@media screen and (min-width: 700px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #course-title {
+    padding-left: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
+  nav a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+  }
+
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

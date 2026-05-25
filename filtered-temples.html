@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album | WDD 131</title>
+  <meta name="description" content="WDD 131 filtered temple album assignment page using JavaScript arrays, filtering, responsive navigation, and dynamic temple cards.">
+  <meta name="author" content="Werner Moecke">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <span id="course-title">Temple Album</span>
+      <button id="menu" type="button" aria-label="Open navigation menu"></button>
+
+      <nav>
+        <a href="#" id="home" title="Home">Home</a>
+        <a href="#" id="old" title="Old temples">Old</a>
+        <a href="#" id="new" title="New temples">New</a>
+        <a href="#" id="large" title="Large temples">Large</a>
+        <a href="#" id="small" title="Small temples">Small</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="album"></div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Werner Moecke | Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
