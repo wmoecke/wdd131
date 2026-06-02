@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Review Submitted | WDD 131</title>
+
+  <meta
+    name="description"
+    content="Confirmation page for a successfully submitted product review."
+  >
+  <meta name="author" content="Werner Moecke">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Review Submitted</h1>
+  </header>
+
+  <main class="confirmation">
+    <section class="confirmation-card">
+      <h2>Thank You!</h2>
+
+      <p>
+        Your product review has been successfully submitted.
+      </p>
+
+      <p>
+        You have submitted
+        <strong><span id="review-count">0</span></strong>
+        product review(s) from this browser.
+      </p>
+
+      <a class="button-link" href="form.html">
+        Submit Another Review
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span>
+      | Werner Moecke | Brazil
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

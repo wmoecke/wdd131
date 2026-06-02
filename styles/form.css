@@ -1,0 +1,229 @@
+:root {
+  --primary-color: #1f567d;
+  --primary-dark: #12324f;
+  --accent-color: #f4b400;
+  --background-color: #f4f7fa;
+  --form-background: #ffffff;
+  --text-color: #1f1f1f;
+  --muted-color: #5c6670;
+  --border-color: #b8c2cc;
+  --focus-color: #f4b400;
+  --footer-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: "Quicksand", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 0.45rem solid var(--accent-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  width: 100%;
+  max-width: 640px;
+  flex: 1;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form,
+.confirmation-card {
+  padding: 1.25rem;
+  background-color: var(--form-background);
+  border: 1px solid var(--border-color);
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.form-group {
+  margin: 0 0 1.4rem;
+}
+
+label,
+legend {
+  font-weight: 700;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+.required {
+  color: #a51d1d;
+}
+
+.optional {
+  display: block;
+  color: var(--muted-color);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 0.35rem;
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.35rem;
+  background-color: #ffffff;
+  color: var(--text-color);
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--focus-color);
+  outline-offset: 2px;
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.55rem;
+}
+
+.rating label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rating span {
+  min-height: 1.7rem;
+  color: var(--primary-dark);
+  font-size: 1.15rem;
+  letter-spacing: -0.15rem;
+}
+
+.rating input {
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 42px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+input[type="submit"],
+.button-link {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  border: 0;
+  border-radius: 0.35rem;
+  background-color: var(--primary-dark);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.button-link:hover {
+  background-color: var(--accent-color);
+  color: #111111;
+}
+
+.confirmation {
+  display: grid;
+  place-items: center;
+}
+
+.confirmation-card {
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-card h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.button-link {
+  margin-top: 1.25rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--footer-text);
+  text-align: center;
+  border-top: 0.45rem solid var(--accent-color);
+  font-weight: 600;
+}
+
+footer p {
+  margin: 0.35rem;
+}
+
+#lastModified {
+  color: #fff3a0;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 640px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
+  form,
+  .confirmation-card {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+}
