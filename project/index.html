@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PSP Vault helps Sony PSP owners discover games and organize a balanced retro gaming collection.">
+    <meta name="author" content="Werner Moecke">
+    <title>Home | PSP Vault</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand-link" href="index.html">
+                <img src="images/logo.webp" alt="PSP Vault logo" width="112" height="74">
+                <span class="brand-text">
+                    <strong>PSP Vault</strong>
+                    <span>Curated retro gaming for your pocket</span>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="setup.html">Setup Planner</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page-shell">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Sony PSP collection guide</p>
+                <h1>Build a portable library worth playing.</h1>
+                <p>
+                    PSP Vault helps retro gaming fans discover memorable games, organize a balanced
+                    collection, and make better use of a PSP memory card.
+                </p>
+                <div class="hero-actions">
+                    <a class="button-link" href="games.html">Explore games</a>
+                    <a class="button-link secondary-button" href="setup.html">Plan a collection</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/psp-3000.webp" alt="Silver Sony PSP-3000 handheld console" width="1100" height="607">
+            </div>
+        </section>
+
+        <section class="stat-strip" aria-label="PSP Vault highlights">
+            <div><strong>16</strong> curated recommendations</div>
+            <div><strong>7</strong> game genres</div>
+            <div><strong>1</strong> practical collection planner</div>
+        </section>
+
+        <section class="content-section" aria-labelledby="featured-title">
+            <div class="section-heading">
+                <div>
+                    <h2 id="featured-title">Start with these favorites</h2>
+                    <p>Three approachable picks that show how varied the PSP library can be.</p>
+                </div>
+                <a href="games.html">See the complete catalog</a>
+            </div>
+            <div id="featured-games" class="card-grid"></div>
+        </section>
+
+        <section class="content-section info-grid" aria-label="Collection guidance">
+            <article class="info-card">
+                <h2>A focused library beats a crowded card</h2>
+                <p>
+                    A carefully selected collection makes browsing easier and encourages you to
+                    actually finish games. Mix a few larger adventures with compact games that are
+                    ideal for shorter sessions.
+                </p>
+                <a href="setup.html">Use the setup planner</a>
+            </article>
+            <article class="info-card">
+                <h2>Keep it legal and organized</h2>
+                <p>
+                    PSP Vault is a discovery and organization guide. Build your library from games
+                    that you legally own, keep backups clearly named, and store your original media safely.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="current-year"></span> PSP Vault · Werner Moecke</p>
+            <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+        </div>
+    </footer>
+</body>
+</html>

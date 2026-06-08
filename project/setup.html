@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use the PSP Vault collection planner to create a balanced PSP game library for your memory card.">
+    <meta name="author" content="Werner Moecke">
+    <title>Setup Planner | PSP Vault</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/planner.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand-link" href="index.html">
+                <img src="images/logo.webp" alt="PSP Vault logo" width="112" height="74">
+                <span class="brand-text">
+                    <strong>PSP Vault</strong>
+                    <span>Curated retro gaming for your pocket</span>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="setup.html" aria-current="page">Setup Planner</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page-shell">
+        <div class="page-intro">
+            <p class="eyebrow">Memory card setup</p>
+            <h1>Plan a balanced PSP collection</h1>
+            <p>
+                Select a storage target and your favorite genres. The planner will generate a compact
+                recommendation list and remember your choices in this browser.
+            </p>
+        </div>
+
+        <section class="planner-layout" aria-label="PSP collection planner">
+            <div class="form-card">
+                <h2>Collection preferences</h2>
+                <form id="collection-form" class="form-grid">
+                    <div class="form-field">
+                        <label for="capacity">Available space</label>
+                        <select id="capacity" name="capacity">
+                            <option value="4096">4 GB</option>
+                            <option value="8192">8 GB</option>
+                            <option value="16384" selected>16 GB</option>
+                            <option value="32768">32 GB</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Preferred genres</legend>
+                        <div class="checkbox-grid">
+                            <label><input type="checkbox" name="genre" value="Fighting" checked> Fighting</label>
+                            <label><input type="checkbox" name="genre" value="Racing" checked> Racing</label>
+                            <label><input type="checkbox" name="genre" value="Horror"> Horror</label>
+                            <label><input type="checkbox" name="genre" value="Action" checked> Action</label>
+                            <label><input type="checkbox" name="genre" value="Simulation"> Simulation</label>
+                            <label><input type="checkbox" name="genre" value="Puzzle"> Puzzle</label>
+                            <label><input type="checkbox" name="genre" value="RPG"> RPG</label>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Generate collection</button>
+                    <p id="form-message" class="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+
+            <div id="planner-results" class="result-card" aria-live="polite">
+                <h2>Your suggested collection</h2>
+                <p>Choose your preferences and submit the form to generate a recommendation list.</p>
+            </div>
+        </section>
+
+        <section class="content-section info-grid" aria-label="PSP storage tips">
+            <article class="info-card">
+                <img src="images/memory-stick.webp" alt="Sony Memory Stick PRO Duo memory card shown from the front and back" width="650" height="833" loading="lazy">
+                <h2>Use clear folders and file names</h2>
+                <p>
+                    Keep game backups grouped consistently and use names that are easy to identify on
+                    the PSP screen. Leave some free space available for saved games and future changes.
+                </p>
+            </article>
+            <article class="info-card">
+                <img src="images/umd-disc.webp" alt="Universal Media Disc made for a PSP console" width="420" height="760" loading="lazy">
+                <h2>Protect your original media</h2>
+                <p>
+                    Store UMD discs in their cases and handle them carefully. The planner is intended
+                    for organizing games you legally own, not for distributing copyrighted files.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="current-year"></span> PSP Vault · Werner Moecke</p>
+            <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+        </div>
+    </footer>
+</body>
+</html>

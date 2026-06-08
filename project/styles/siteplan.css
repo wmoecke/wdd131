@@ -166,23 +166,12 @@ li + li {
     font-family: "Roboto", Arial, sans-serif;
 }
 
-/* .wireframes {
-    align-items: start;
-    grid-template-columns: minmax(15rem, 20rem) minmax(20rem, 1fr);
-} */
-
 .wireframes {
     display: grid;
     grid-template-columns: 1fr;
     align-items: start;
     gap: 1rem;
 }
-
-/* .wireframe-panel {
-    padding: 1rem;
-    background-color: var(--ice-blue);
-    border-radius: 0.65rem;
-} */
 
 .wireframe-panel {
     min-width: 0;

@@ -3,146 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website planning document for PSP Vault, a curated guide for Sony PSP owners and retro gaming enthusiasts.">
+    <meta name="description" content="Website planning document for PSP Vault.">
     <meta name="author" content="Werner Moecke">
-    <title>PSP Vault | Website Planning Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <title>Site Plan | PSP Vault</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    
 </head>
 <body>
-    <header>
-        <div class="brand">
-            <img
-                class="logo"
-                src="images/logo.webp"
-                alt="PSP Vault logo featuring a portable game console and a padlock"
-            >
-            <div>
-                <p class="eyebrow">Website Planning Document</p>
-                <h1>PSP Vault</h1>
-                <p class="tagline">Curated retro gaming for your pocket.</p>
-            </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand-link" href="index.html">
+                <img src="images/logo.webp" alt="PSP Vault logo" width="112" height="74">
+                <span class="brand-text">
+                    <strong>PSP Vault</strong>
+                    <span>Curated retro gaming for your pocket</span>
+                </span>
+            </a>
+            <button id="menu-button" class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="setup.html">Setup Planner</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <main class="page-shell">
+        <div class="page-intro">
+            <p class="eyebrow">Website planning document</p>
+            <h1>PSP Vault</h1>
+            <p>Curated retro gaming for your pocket.</p>
+        </div>
 
-    <main>
-        <section aria-labelledby="site-name">
-            <h2 id="site-name">Site Name</h2>
+        <section class="siteplan-section">
+            <h2>Site Name</h2>
             <p><strong>PSP Vault</strong></p>
             <p>
                 The name represents a carefully selected collection of information and recommendations
                 for Sony PSP owners. The word <em>Vault</em> suggests a reliable place where visitors can
-                find valuable games, practical setup tips, and useful guidance for building a personal
-                PSP library.
+                find valuable games, practical setup tips, and useful guidance.
             </p>
             <p><strong>Optional domain:</strong> pspvault-guide.com</p>
         </section>
 
-        <section aria-labelledby="site-purpose">
-            <h2 id="site-purpose">Site Purpose</h2>
+        <section class="siteplan-section">
+            <h2>Site Purpose</h2>
             <p>
                 PSP Vault is a practical guide for Sony PSP owners and retro gaming enthusiasts.
-                The website will help visitors discover recommended PSP games by genre, learn how
-                to organize a game collection on a memory card, and find useful tips for improving
-                their experience with the console. The site will focus on curated content rather
-                than attempting to list every game released for the system.
+                It helps visitors discover games by genre, organize a collection on a memory card,
+                and find useful setup tips.
             </p>
         </section>
 
-        <section aria-labelledby="scenarios">
-            <h2 id="scenarios">Scenarios</h2>
+        <section class="siteplan-section">
+            <h2>Scenarios</h2>
             <ul>
                 <li>What are the best PSP games for someone who enjoys fighting, racing, horror, and action games?</li>
                 <li>Which PSP games should I try first if I am new to the console?</li>
-                <li>How can I choose a balanced collection of games that fits on my PSP memory card?</li>
+                <li>How can I choose a balanced collection that fits on my memory card?</li>
                 <li>How can I organize my games so that it is easier to browse my collection?</li>
             </ul>
         </section>
 
-        <section aria-labelledby="color-schema">
-            <h2 id="color-schema">Color Schema</h2>
-            <p>
-                The color palette is inspired by the PSP's sleek design and by a modern,
-                technology-focused visual style. The selected colors are also applied throughout
-                this planning document.
-            </p>
+        <section class="siteplan-section">
+            <h2>Color Schema</h2>
             <div class="palette">
-                <article class="swatch navy">
-                    <h3>Deep Navy</h3>
-                    <p>#101828</p>
-                    <p>Header, footer, and strong visual backgrounds.</p>
-                </article>
-                <article class="swatch blue">
-                    <h3>Electric Blue</h3>
-                    <p>#2F80ED</p>
-                    <p>Links, accents, buttons, and highlighted elements.</p>
-                </article>
-                <article class="swatch ice">
-                    <h3>Ice Blue</h3>
-                    <p>#EAF4FF</p>
-                    <p>Section backgrounds and subtle highlights.</p>
-                </article>
-                <article class="swatch charcoal">
-                    <h3>Charcoal</h3>
-                    <p>#1F2937</p>
-                    <p>Body text and secondary dark elements.</p>
-                </article>
+                <article class="swatch navy"><h3>Deep Navy</h3><p>#101828</p></article>
+                <article class="swatch blue"><h3>Electric Blue</h3><p>#2F80ED</p></article>
+                <article class="swatch ice"><h3>Ice Blue</h3><p>#EAF4FF</p></article>
+                <article class="swatch charcoal"><h3>Charcoal</h3><p>#1F2937</p></article>
             </div>
         </section>
 
-        <section aria-labelledby="typography">
-            <h2 id="typography">Typography</h2>
-            <div class="typography-grid">
-                <article>
-                    <h3 class="orbitron-sample">Orbitron</h3>
-                    <p>
-                        Orbitron will be used for the site logo and primary headings. Its
-                        retro-futuristic appearance supports the portable gaming theme.
-                    </p>
-                </article>
-                <article>
-                    <h3 class="roboto-sample">Roboto</h3>
-                    <p>
-                        Roboto will be used for paragraphs, navigation links, buttons, and game
-                        card content. It provides comfortable reading on mobile and desktop screens.
-                    </p>
-                </article>
-            </div>
+        <section class="siteplan-section">
+            <h2>Typography</h2>
+            <p><strong>Orbitron:</strong> logo and primary headings.</p>
+            <p><strong>Roboto:</strong> paragraphs, navigation, buttons, and card content.</p>
         </section>
 
-        <section aria-labelledby="wireframes">
-            <h2 id="wireframes">Wireframes</h2>
-            <p>
-                The following wireframes show the planned home page layout for desktop
-                and mobile screens.
-            </p>
-
+        <section class="siteplan-section">
+            <h2>Wireframes</h2>
             <div class="wireframes">
                 <article class="wireframe-panel">
                     <h3>Mobile View</h3>
-                    <img
-                        src="images/mobile-view.webp"
-                        alt="Mobile wireframe for the PSP Vault home page"
-                        loading="lazy"
-                    >
+                    <img src="images/mobile-view.webp" alt="Mobile home page wireframe" loading="lazy">
                 </article>
-
                 <article class="wireframe-panel">
                     <h3>Desktop View</h3>
-                    <img
-                        src="images/desktop-view.webp"
-                        alt="Desktop wireframe for the PSP Vault home page"
-                        loading="lazy"
-                    >
+                    <img src="images/desktop-view.webp" alt="Desktop home page wireframe" loading="lazy">
                 </article>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 PSP Vault | Werner Moecke</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="current-year"></span> PSP Vault · Werner Moecke</p>
+            <p><a href="references.html">References</a> · <a href="siteplan.html">Site Plan</a></p>
+        </div>
     </footer>
 </body>
 </html>
